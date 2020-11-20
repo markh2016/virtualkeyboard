@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+
+/* quick reset so all our padding is the right size */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+
+/* add some spacing */
+body          {
+  background-color: #000;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  
+
+}
+
+
+/* limit the width and center */
+.div_container  {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border : 2px solid #ff0000;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  
+ 
+}
+
+#heading{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff ;
+
+}
+
+   
+.write {
+	
+	 text-align: center;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: none;
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+
+.spacer{
+
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: none;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    
+
+}
+
+/* describe layout and style of container that hold field for input  */
+.entry_container {
+ width   : 80%;
+ margin: auto;
+ text-align: center;
+ border : 2px solid #ff0000;
+ border-radius: 5px;
+ background-color: white;
+ margin: 0 auto;
+ padding: 10px;
+}
+   
+
+.keys_container
+{
+display: flex ;	
+width: 70% ;
+height:250px;
+
+/*border : 2px solid #ff0000; 
+border-radius: 5px;*/
+margin: 0 auto;
+padding: 20px;
+
+
+}
+
+.UI_Querty_BTN{
+
+margin:5px ;
+
+}
+
+#keyboard {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+    #keyboard li {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+        .capslock, .tab, .left-shift {
+        clear: left;
+        }
+            #keyboard .tab, #keyboard .delete {
+            width: 70px;
+            }
+            #keyboard .capslock {
+            width: 80px;
+            }
+            #keyboard .return {
+            width: 77px;
+            }
+            #keyboard .left-shift {
+            width: 95px;
+            }
+            #keyboard .right-shift {
+            width: 109px;
+            }
+        .lastitem {
+        margin-right: 0;
+        }
+        .uppercase {
+        text-transform: uppercase;
+        }
+        #keyboard .space {
+        clear: left;
+        width: 681px;
+        }
+        .on {
+        display: none;
+        }
+        #keyboard li:hover {
+        position: relative;
+        top: 1px;
+        left: 1px;
+        border-color: #e5e5e5;
+        cursor: pointer;
+        }
